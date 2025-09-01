@@ -1,0 +1,35 @@
+<!-- TODO: Re-style -->
+<div class="login-page-container">
+  <div class="title-container">
+    <p class="page-title">Login</p>
+  </div>
+
+  <div class="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+      <!-- Username -->
+      <mat-form-field appearance="fill" class="user-management-form">
+        <mat-label>Username</mat-label>
+        <input matInput autocomplete="off" type="text" formControlName="username" />
+        <mat-error *ngIf="loginForm.get('username')?.hasError('required')">
+          Enter a username
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="fill" class="user-management-form">
+        <mat-label>Password</mat-label>
+        <input matInput autocomplete="off" type="password" formControlName="password" />
+        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+          Enter a password
+        </mat-error>
+      </mat-form-field>
+
+      <div class="login-button-container">
+        <app-generic-button [text]="'Login'" type="submit"></app-generic-button>
+        <small [routerLink]="['/register']">
+          Don't have an account? Register here
+        </small>
+      </div>
+    </form>
+  </div>
+</div>

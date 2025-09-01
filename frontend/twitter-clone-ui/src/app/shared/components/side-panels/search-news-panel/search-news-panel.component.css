@@ -1,0 +1,37 @@
+* {
+  min-width: 20%;
+}
+
+.search-form {
+  width: 100%;
+  margin-bottom: -1.36em;
+}
+
+/* NOTE: This is the search form */
+::ng-deep .mdc-text-field {
+  border-radius: 0 !important;
+}
+
+.container {
+  color: white;
+  background-color: var(--primary-colour);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 15px;
+  height: 260px;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
+.whats-happening-container {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    display: none;
+  }
+}

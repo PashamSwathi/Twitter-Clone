@@ -1,0 +1,138 @@
+.back-navigation {
+  cursor: pointer;
+  display: flex;
+}
+
+.context {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.context-icon,
+.context-icon-and-text {
+  display: flex;
+  align-items: center;
+}
+
+.context-icon {
+  padding-right: 10px;
+  height: 20px;
+}
+
+.profile-header {
+  display: flex;
+  height: 220px;
+  background-color: #eee;
+}
+
+.profile-header-left {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+.profile-header-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 0;
+}
+
+.names-and-follow-information {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ddd;
+  justify-content: space-between;
+}
+
+div.profile-header > div.profile-header-left > img {
+  width: 200px;
+  height: 200px;
+}
+
+div.profile-header > div.profile-header-right > img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+}
+
+.names {
+  display: grid;
+  padding-left: 10px;
+  height: fit-content;
+}
+
+.username {
+  font-size: 23.5px;
+}
+
+.username,
+.user-handle-name {
+  font-weight: 100;
+}
+
+.profile-buttons {
+  display: flex;
+  padding: 10px 0;
+  justify-content: flex-end;
+}
+
+.profile-action-button {
+  padding-left: 10px;
+}
+
+.profile-action-button:first-child {
+  padding-left: 0;
+}
+
+.user-information {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+.about-text {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.location-link-join-date,
+.follow-information {
+  padding: 10px;
+}
+
+.location-link-join-date {
+  display: flex;
+  background-color: #ddd;
+  justify-content: space-between;
+}
+
+.profile-icons {
+  padding-right: 5px;
+}
+
+.about-text,
+.location,
+.link,
+.join-date {
+  display: flex;
+  align-items: center;
+}
+
+.users-you-follow,
+.users-following-you {
+  display: flex;
+}
+
+.follow-text {
+  padding-right: 10px;
+}
+
+.tweet-container {
+  padding: 10px 0;
+}

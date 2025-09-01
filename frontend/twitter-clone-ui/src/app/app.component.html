@@ -1,0 +1,19 @@
+<div class="header">
+  <app-header></app-header>
+</div>
+
+<div class="twitter-clone">
+  <app-navigation-panel
+    class="side-panels left-side-panel"
+    *ngIf="showSidePanels()"
+  ></app-navigation-panel>
+
+  <div class="timeline-container" [ngStyle]="{ width: getWidth() }">
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-search-news-panel
+    class="side-panels right-side-panel"
+    *ngIf="showSidePanels()"
+  ></app-search-news-panel>
+</div>

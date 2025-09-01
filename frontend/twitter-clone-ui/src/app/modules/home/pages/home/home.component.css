@@ -1,0 +1,18 @@
+.compose-tweet-container {
+  margin-bottom: 7px;
+}
+
+.tweet-container {
+  margin-bottom: 10px;
+}
+
+.timeline {
+  height: 781px;
+  width: 100%;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

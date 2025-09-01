@@ -1,0 +1,28 @@
+<div class="title-container back-navigation" (click)="goHome()">
+  <div class="context">
+    <p>Viewing tweet</p>
+    <div class="context-icon-and-text">
+      <mat-icon class="context-icon">arrow_back</mat-icon>
+      <p class="context-text">Return</p>
+    </div>
+  </div>
+</div>
+
+<div class="tweet-container">
+  <app-tweet [tweet]="tweet"></app-tweet>
+
+  <form class="sort-tweet-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Sort Comments</mat-label>
+      <mat-select name="sort-tweet" [(ngModel)]="selectedOption" (ngModelChange)="sortComments()">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+
+  <div class="comment-container" *ngFor="let comment of comments">
+    <app-comment [comment]="comment" (delete-comment)="deleteComment($event)"></app-comment>
+  </div>
+</div>

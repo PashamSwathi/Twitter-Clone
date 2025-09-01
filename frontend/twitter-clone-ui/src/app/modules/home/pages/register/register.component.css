@@ -1,0 +1,27 @@
+.tweet-container {
+  margin-bottom: 10px;
+}
+
+.user-management-form {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-button {
+  color: white;
+  background: #673ab7;
+  border-radius: 0;
+  transition-duration: 0.25s;
+}
+
+.register-button:hover {
+  color: black;
+  background-color: white;
+  transition-duration: 0.25s;
+}

@@ -1,0 +1,13 @@
+.inner-container {
+  display: grid;
+  justify-items: stretch;
+}
+
+.navigation {
+  /* padding-left: 10px; */
+}
+
+.create-tweet-button {
+  margin-top: 52px;
+  margin-bottom: 0;
+}
